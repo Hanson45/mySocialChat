@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Frontend for Sending Messages</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Enviar Mensajes</h1>
+    <div>
+        <label for="senderId">ID del Remitente:</label>
+        <input type="text" id="senderId">
+    </div>
+    <div>
+        <label for="receiverId">ID del Destinatario:</label>
+        <input type="text" id="receiverId">
+    </div>
+    <div>
+        <label for="messageContent">Contenido del Mensaje:</label>
+        <input type="text" id="messageContent">
+    </div>
+    <div>
+        <button onclick="enviarMensaje()">Enviar Mensaje</button>
+    </div>
+</div>
+<div class="container chat">
+    <h2>Chat General</h2>
+    <ul id="chatList"></ul>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.5.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
